@@ -1,11 +1,9 @@
 # T-Stalk
-Simplistic application to monitor telegram user activity.
-
-Logs online time and profile updates.
-
-Generate graphs from data.
+Simplistic program to monitor telegram user activity (online time and profile updates).
 
 ## Install / Setup
+
+install requirements: `python -m pip -r requirements.txt`
 
 ## Usage
 
@@ -19,4 +17,4 @@ add or remove users from program.
 
 ### viewer.py
 
-generate graphs from data.
+Generate graphs from data.
