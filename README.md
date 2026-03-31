@@ -18,6 +18,16 @@ add user activity to database.
 
 add or remove users from program.
 
+modes: `add` or `remove`
+
+phone: `python manager.py add +44123123123`
+
+username: `python manager.py add @example`
+
+id: `python manager.py add 123123123`
+
+if the identifier is not valid the script will raise an error.
+
 ### viewer.py
 
 Generate graphs from data.
