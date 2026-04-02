@@ -8,7 +8,11 @@ put `api_id` and `api_hash` into `api_creds.json`
 
 install requirements: `python -m pip -r requirements.txt`
 
+setup the database and the database user using `tstalk_schema.sql`
+
 add the script runner.py to cron (this will be changed in the future to allow for more frequent updates)
+
+after you have added
 
 ## Usage
 
