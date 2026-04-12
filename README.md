@@ -26,7 +26,7 @@ add user activity to database.
 
 add or remove users from program.
 
-modes: `add` or `remove`
+modes: `add`, `remove`, `list`
 
 phone:    `python manager.py add +44123123123`
 
