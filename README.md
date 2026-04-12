@@ -34,9 +34,7 @@ username: `python manager.py add @example`
 
 id:       `python manager.py add 123123123`
 
-or if you dont want the user to be logged in your bash history you can do `python manager.py {mode}`
-
-and you will be prompted for the user 
+or if you dont want the user to be logged in your bash history you can do `python manager.py {mode}` and you will be prompted for the user 
 
 if the identifier is not valid the script will raise an error.
 
