@@ -12,7 +12,7 @@ install requirements: `python -m pip -r requirements.txt`
 
 setup the database and the database user using `tstalk_schema.sql`
 
-add the script runner.py to cron (this will be changed in the future to allow for more frequent updates)
+add the script runner.py to cron (this will be changed to systemd timers in the future to allow for more frequent updates)
 
 after you have added script to cron you can check everything is running by checking logs for errors with `cat scraper.log` if there are errors it will show in the file
 
