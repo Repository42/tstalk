@@ -2,6 +2,8 @@
 Simplistic program to monitor telegram user activity (online time and profile updates).
 
 ## Install / Setup
+clone repo `https://github.com/Repository42/tstalk.git`
+
 create an app at `my.telegram.org`
 
 put `api_id` and `api_hash` into `api_creds.json`
@@ -12,15 +14,13 @@ setup the database and the database user using `tstalk_schema.sql`
 
 add the script runner.py to cron (this will be changed in the future to allow for more frequent updates)
 
-after you have added
+after you have added script to cron you can check everything is running by checking logs for errors with `cat scraper.log` if there are errors it will show in the file
 
 ## Usage
 
 ### runner.py
 
 add user activity to database.
-
-
 
 ### manager.py
 
