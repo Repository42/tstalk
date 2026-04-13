@@ -29,8 +29,6 @@ class Program:
 		parser.add_argument("--dbcredentials", action = "store", type = str, default = "$TSTALKDBCREDS", help = "Env to load credentials from")
 		parser.add_argument("--apicredentials", action = "store", type = str, default = "$TSTALKAPICREDS", help = "Env to load credentials from")
 		parser.add_argument("--session", action = "store", type = str, default = "tstalk.session", help = "Session file location")
-		parser.add_argument("-v", "--verbose", action = "store_true", dest = "verbose", help = "Print extra info (sql commands)")
-		parser.add_argument("-n", "--nocommit", action = "store_true", dest = "nocommit", help = "No commit (dry-run)")
 		self.args = parser.parse_args()
 
 		with open(os.path.expanduser(os.path.expandvars(self.args.apicredentials))) as fp:
