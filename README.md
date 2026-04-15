@@ -45,3 +45,11 @@ generate graphs from data.
 ### owner.py 
 
 prints information about owner of .session file, so you can verify you are logged in as the correct user.
+
+```
+--- Owner Profile ---
+User ID: 
+Phone: +
+Username: @
+Display Name: 
+```
