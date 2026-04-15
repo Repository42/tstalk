@@ -46,6 +46,8 @@ generate graphs from data.
 
 prints information about owner of .session file, so you can verify you are logged in as the correct user.
 
+example of output:
+
 ```
 --- Owner Profile ---
 User ID: 
