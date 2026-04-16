@@ -50,8 +50,8 @@ example of output:
 
 ```
 --- Owner Profile ---
-User ID: 
-Phone: +
-Username: @
-Display Name: 
+User ID: 1234567890
+Phone: +123123123
+Username: @telegram
+Display Name: example
 ```
