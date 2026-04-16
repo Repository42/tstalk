@@ -8,8 +8,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 -- DROP DATABASE tstalk;
-CREATE DATABASE tstalk;
-USE tstalk;
+CREATE DATABASE `tstalk`;
+USE `tstalk`;
 
 CREATE USER IF NOT EXISTS 'tstalk_user'@'%' IDENTIFIED BY "changethis";
 GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, FILE, INDEX, ALTER ON *.* TO 'tstalk_user'@'%';
