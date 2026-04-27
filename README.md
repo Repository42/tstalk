@@ -49,7 +49,7 @@ if the identifier is not valid the script will raise an error.
 
 generate graphs from data.
 
-# Example commands: 
+#### Example commands: 
 
 get help for commands: `python viewer.py help`
 
