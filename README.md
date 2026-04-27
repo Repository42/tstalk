@@ -47,9 +47,36 @@ if the identifier is not valid the script will raise an error.
 
 ### viewer.py
 
-get info on commands: `python viewer.py help`
-
 generate graphs from data.
+
+# Example commands: 
+
+get help for commands: `python viewer.py help`
+
+will output something like: 
+```
+Available commands are: 
+  activitydaily        num args: 1
+  activityhourly       num args: 1
+  twoactivitydaily     num args: 2
+  twoactivityhourly    num args: 2
+  threeactivitydaily   num args: 3
+  threeactivityhourly  num args: 3
+  activityscatter      num args: 1
+  profileupdates       num args: 1
+  pfpupdates           num args: 1
+  sharingtime          num args: 1
+  activityline         num args: 1
+  help                 num args: 0
+```
+
+bar chart for a user: `python viewer.py activitydaily {uidhere}`
+
+bar chart for two users: `python viewer.py twoactivitydaily {firstuidhere} {seconduidhere}`
+
+bar chart for three users: `python viewer.py twoactivitydaily {firstuidhere} {seconduidhere} {thirduidhere}`
+
+user profile updates: `python viewer.py profileupdates {uidhere}`
 
 ### owner.py 
 
