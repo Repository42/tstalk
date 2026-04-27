@@ -68,7 +68,6 @@ Available commands:
   sharingtime          num args: 1  type: broken barh
   activityline         num args: 1  type: line plot
   help                 num args: 0  type: help
-
 ```
 
 bar chart for a user: `python viewer.py activitydaily {uidhere}`
