@@ -1,0 +1,146 @@
+{
+	"activitydaily": {
+		"delta": 86400,
+		"title": "Daily activity bar chart for user {0}",
+		"labels": [
+			"Date",
+			"Count"
+		],
+		"mode": 0,
+		"args": 1,
+		"commands": [
+			"SELECT (timestamp - MOD(timestamp, 86400)) AS hour_start, COUNT(timestamp) AS avg_count FROM activity WHERE uid = '{0}' GROUP BY hour_start"
+		]
+	},
+	"activityhourly": {
+		"delta": 3600,
+		"title": "Hourly activity bar chart for user {0}",
+		"labels": [
+			"Date",
+			"Count"
+		],
+		"mode": 0,
+		"args": 1,
+		"commands": [
+			"SELECT (`timestamp` - (`timestamp` % 3600)) AS hourly_window, COUNT(timestamp) AS row_count FROM activity WHERE uid = '{0}' GROUP BY hourly_window ORDER BY hourly_window ASC"
+		]
+	},
+	"twoactivitydaily": {
+		"delta": 43200,
+		"title": "Daily activity bar chart for user {0} and {1}",
+		"labels": [
+			"Date",
+			"Count"
+		],
+		"mode": 0,
+		"args": 2,
+		"commands": [
+			"SELECT (timestamp - MOD(timestamp, 86400)) AS hour_start, COUNT(timestamp) AS avg_count FROM activity WHERE uid = '{0}' GROUP BY hour_start",
+			"SELECT (timestamp - MOD(timestamp, 86400)) AS hour_start, COUNT(timestamp) AS avg_count FROM activity WHERE uid = '{1}' GROUP BY hour_start"
+		]
+	},
+	"twoactivityhourly": {
+		"delta": 1800,
+		"title": "Hourly activity bar chart for user {0} and {1}",
+		"labels": [
+			"Date",
+			"Count"
+		],
+		"mode": 0,
+		"args": 2,
+		"commands": [
+			"SELECT (`timestamp` - (`timestamp` % 3600)) AS hourly_window, COUNT(timestamp) AS row_count FROM activity WHERE uid = '{0}' GROUP BY hourly_window ORDER BY hourly_window ASC",
+			"SELECT (`timestamp` - (`timestamp` % 3600)) AS hourly_window, COUNT(timestamp) AS row_count FROM activity WHERE uid = '{1}' GROUP BY hourly_window ORDER BY hourly_window ASC"
+		]
+	},
+	"threeactivitydaily": {
+		"delta": 28800,
+		"title": "Daily activity bar chart for user {0}, {1} and {2}",
+		"labels": [
+			"Date",
+			"Count"
+		],
+		"mode": 0,
+		"args": 3,
+		"commands": [
+			"SELECT (timestamp - MOD(timestamp, 86400)) AS hour_start, COUNT(timestamp) AS avg_count FROM activity WHERE uid = '{0}' GROUP BY hour_start",
+			"SELECT (timestamp - MOD(timestamp, 86400)) AS hour_start, COUNT(timestamp) AS avg_count FROM activity WHERE uid = '{1}' GROUP BY hour_start",
+			"SELECT (timestamp - MOD(timestamp, 86400)) AS hour_start, COUNT(timestamp) AS avg_count FROM activity WHERE uid = '{2}' GROUP BY hour_start"
+		]
+	},
+	"threeactivityhourly": {
+		"delta": 1200,
+		"title": "Hourly activity bar chart for users {0}, {1} and {2}",
+		"labels": [
+			"Date",
+			"Count"
+		],
+		"mode": 0,
+		"args": 3,
+		"commands": [
+			"SELECT (`timestamp` - (`timestamp` % 3600)) AS hourly_window, COUNT(timestamp) AS row_count FROM activity WHERE uid = '{0}' GROUP BY hourly_window ORDER BY hourly_window ASC",
+			"SELECT (`timestamp` - (`timestamp` % 3600)) AS hourly_window, COUNT(timestamp) AS row_count FROM activity WHERE uid = '{1}' GROUP BY hourly_window ORDER BY hourly_window ASC",
+			"SELECT (`timestamp` - (`timestamp` % 3600)) AS hourly_window, COUNT(timestamp) AS row_count FROM activity WHERE uid = '{2}' GROUP BY hourly_window ORDER BY hourly_window ASC"
+		]
+	},
+	"activityscatter": {
+		"title": "Activity scatter plot for user {0}",
+		"labels": [
+			"Date",
+			"Time"
+		],
+		"mode": 1,
+		"args": 1,
+		"commands": [
+			"SELECT timestamp FROM `activity` WHERE `uid` = {0}"
+		]
+	},
+	"profileupdates": {
+		"title": "Profile updates scatter chart for user {0}",
+		"labels": [
+			"Date",
+			"Time"
+		],
+		"mode": 1,
+		"args": 1,
+		"commands": [
+			"SELECT timestamp FROM `updates` WHERE `uid` = {0}"
+		]
+	},
+	"pfpupdates": {
+		"title": "PFP updates scatter chart for user {0}",
+		"labels": [
+			"Date",
+			"Time"
+		],
+		"mode": 1,
+		"args": 1,
+		"commands": [
+			"SELECT timestamp FROM `updates` WHERE `uid` = {0}"
+		]
+	},
+	"sharingtime": {
+		"title": "Sharing time or not",
+		"labels": [
+			"Date",
+			"Time"
+		],
+		"mode": 2,
+		"args": 1,
+		"commands": [
+			"SELECT timestamp FROM `activity` WHERE `uid` = {0}"
+		]
+	},
+	"activityline": {
+		"title": "Activity lineplot for user {0}",
+		"labels": [
+			"Date",
+			"Time"
+		],
+		"mode": 3,
+		"args": 1,
+		"commands": [
+			"SELECT * FROM `activity` WHERE `uid` = {0}"
+		]
+	}
+}
