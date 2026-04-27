@@ -48,11 +48,12 @@ if __name__ == "__main__":
 		showHelp = True
 
 	if showHelp:
-		print("Available commands are: ")
+		print("Available commands:")
 		mKey = max(len(key) for key in keys)
+		types = ['bar chart', 'scatter plot', 'broken barh', 'line plot', 'help']
 
 		for key in keys:
-			print(f"  {key} {(mKey - len(key)) * ' '} num args: {allCommands[key]['args']}")
+			print(f"  {key} {(mKey - len(key)) * ' '} num args: {allCommands[key]['args']}  type: {types[allCommands[key]['mode']]}")
 
 		exit()
 
@@ -63,11 +64,12 @@ if __name__ == "__main__":
 		print(f"Expected {command['args']} arguments recieved {argCount} arguments")
 		exit()
 		#TODO make it so that if incorrect args recieved or no args, ask for those values via input() like in manager.py
-		# arguments = [input(f"Input value for argument-{arg}: ") for arg in range(argCount)] # then figure out what type its supposed to be or something
+		# arguments = [input(f"Input value for argument-{arg}: ") for arg in range(argCount)]
+		# then figure out what type its supposed to be or something ? maybe not cause its only ever going to be user id
 
 	formattedCommands = [] # array of formatted sql commands to execute and plot data against
 
-	for c in command["commands"]:
+	for c in command["commands"]: # format commands
 		# TODO fix ltime limit ? maybe not because thats snca and u can adjust with the gui
 		if args.ltime is not None:
 			ltime = convertTime(args.ltime)
@@ -103,7 +105,7 @@ if __name__ == "__main__":
 	fig, ax = plt.subplots()
 	allRes = []
 
-	for index, c in enumerate(formattedCommands):
+	for index, c in enumerate(formattedCommands): # execute commands
 		print(f"Executing: {c}")
 		cursor.execute(c)
 		r = cursor.fetchall()
