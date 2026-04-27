@@ -47,6 +47,8 @@ if the identifier is not valid the script will raise an error.
 
 ### viewer.py
 
+get info on commands: `python viewer.py help`
+
 generate graphs from data.
 
 ### owner.py 
