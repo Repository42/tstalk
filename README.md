@@ -55,19 +55,20 @@ get help for commands: `python viewer.py help`
 
 will output something like: 
 ```
-Available commands are: 
-  activitydaily        num args: 1
-  activityhourly       num args: 1
-  twoactivitydaily     num args: 2
-  twoactivityhourly    num args: 2
-  threeactivitydaily   num args: 3
-  threeactivityhourly  num args: 3
-  activityscatter      num args: 1
-  profileupdates       num args: 1
-  pfpupdates           num args: 1
-  sharingtime          num args: 1
-  activityline         num args: 1
-  help                 num args: 0
+Available commands: 
+  activitydaily        num args: 1  type: bar chart
+  activityhourly       num args: 1  type: bar chart
+  twoactivitydaily     num args: 2  type: bar chart
+  twoactivityhourly    num args: 2  type: bar chart
+  threeactivitydaily   num args: 3  type: bar chart
+  threeactivityhourly  num args: 3  type: bar chart
+  activityscatter      num args: 1  type: scatter plot
+  profileupdates       num args: 1  type: scatter plot
+  pfpupdates           num args: 1  type: scatter plot
+  sharingtime          num args: 1  type: broken barh
+  activityline         num args: 1  type: line plot
+  help                 num args: 0  type: help
+
 ```
 
 bar chart for a user: `python viewer.py activitydaily {uidhere}`
