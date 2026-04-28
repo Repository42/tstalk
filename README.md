@@ -72,6 +72,8 @@ Available commands:
 
 bar chart for a user: `python viewer.py activitydaily {uidhere}`
 
+![Example pic 1](pics/daily_activity.png)
+
 bar chart for two users: `python viewer.py twoactivitydaily {firstuidhere} {seconduidhere}`
 
 bar chart for three users: `python viewer.py threeactivitydaily {firstuidhere} {seconduidhere} {thirduidhere}`
