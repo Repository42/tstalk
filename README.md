@@ -80,6 +80,8 @@ bar chart for two users: `python viewer.py twoactivitydaily {firstuidhere} {seco
 
 bar chart for three users: `python viewer.py threeactivitydaily {firstuidhere} {seconduidhere} {thirduidhere}`
 
+![three users daily activity](pics/three_daily_activity.png)
+
 user profile updates: `python viewer.py profileupdates {uidhere}`
 
 ### owner.py 
