@@ -84,6 +84,8 @@ bar chart for three users: `python viewer.py threeactivitydaily {firstuidhere} {
 
 user profile updates: `python viewer.py profileupdates {uidhere}`
 
+![profile updates scatter](pics/profile_updates.png)
+
 ### owner.py 
 
 prints information about owner of .session file, so you can verify you are logged in as the correct user.
