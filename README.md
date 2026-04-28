@@ -74,7 +74,7 @@ bar chart for a user: `python viewer.py activitydaily {uidhere}`
 
 bar chart for two users: `python viewer.py twoactivitydaily {firstuidhere} {seconduidhere}`
 
-bar chart for three users: `python viewer.py twoactivitydaily {firstuidhere} {seconduidhere} {thirduidhere}`
+bar chart for three users: `python viewer.py threeactivitydaily {firstuidhere} {seconduidhere} {thirduidhere}`
 
 user profile updates: `python viewer.py profileupdates {uidhere}`
 
